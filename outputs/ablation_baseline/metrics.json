@@ -1,0 +1,38 @@
+{
+  "original": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "class_weight": "balanced",
+    "C": 0.1,
+    "dev_accuracy": 0.7350597609561753,
+    "dev_macro_f1": 0.6421706893683296,
+    "test_accuracy": 0.7408506429277942,
+    "test_macro_f1": 0.6454101401965168
+  },
+  "no_bigram": {
+    "ngram_range": [
+      1,
+      1
+    ],
+    "class_weight": "balanced",
+    "C": 0.1,
+    "dev_accuracy": 0.7151394422310757,
+    "dev_macro_f1": 0.6273052053264733,
+    "test_accuracy": 0.7299703264094956,
+    "test_macro_f1": 0.6429267125935124
+  },
+  "no_class_weight": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "class_weight": null,
+    "C": 0.1,
+    "dev_accuracy": 0.7270916334661355,
+    "dev_macro_f1": 0.4516466418654261,
+    "test_accuracy": 0.7176063303659743,
+    "test_macro_f1": 0.45170397648350935
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "test_samples": 2022,
+  "labels": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "accuracy": 0.7932739861523245,
+  "macro_f1": 0.6569389079619072,
+  "confusion_matrix": [
+    [
+      355,
+      89,
+      52
+    ],
+    [
+      70,
+      80,
+      111
+    ],
+    [
+      21,
+      75,
+      1169
+    ]
+  ]
+}

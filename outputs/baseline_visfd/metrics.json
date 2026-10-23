@@ -1,0 +1,724 @@
+{
+  "label_provenance": {
+    "source": "UIT-ViSFD",
+    "method": "rating_derived",
+    "mapping": {
+      "1-2": "negative",
+      "3": "neutral",
+      "4-5": "positive"
+    }
+  },
+  "overlap_audit": {
+    "sizes": {
+      "train": 7057,
+      "dev": 1004,
+      "test": 2022
+    },
+    "within_split_duplicate_counts": {
+      "train": 0,
+      "dev": 0,
+      "test": 0
+    },
+    "cross_split_duplicate_text_count": 0,
+    "cross_split_examples": []
+  },
+  "selection": [
+    {
+      "model": "Logistic Regression",
+      "parameter": "C",
+      "value": 0.1,
+      "dev": {
+        "accuracy": 0.7350597609561753,
+        "macro_f1": 0.6421706893683296,
+        "confusion_matrix": [
+          [
+            164,
+            46,
+            15
+          ],
+          [
+            48,
+            66,
+            18
+          ],
+          [
+            44,
+            95,
+            508
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.640625,
+            "recall": 0.7288888888888889,
+            "f1-score": 0.681912681912682,
+            "support": 225.0
+          },
+          "neutral": {
+            "precision": 0.3188405797101449,
+            "recall": 0.5,
+            "f1-score": 0.3893805309734513,
+            "support": 132.0
+          },
+          "positive": {
+            "precision": 0.9390018484288355,
+            "recall": 0.7851622874806801,
+            "f1-score": 0.8552188552188552,
+            "support": 647.0
+          },
+          "accuracy": 0.7350597609561753,
+          "macro avg": {
+            "precision": 0.6328224760463268,
+            "recall": 0.6713503921231897,
+            "f1-score": 0.6421706893683296,
+            "support": 1004.0
+          },
+          "weighted avg": {
+            "precision": 0.7905993799354538,
+            "recall": 0.7350597609561753,
+            "f1-score": 0.7551346442683747,
+            "support": 1004.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Logistic Regression",
+      "parameter": "C",
+      "value": 1.0,
+      "dev": {
+        "accuracy": 0.74800796812749,
+        "macro_f1": 0.6362674140811823,
+        "confusion_matrix": [
+          [
+            160,
+            45,
+            20
+          ],
+          [
+            51,
+            55,
+            26
+          ],
+          [
+            35,
+            76,
+            536
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.6504065040650406,
+            "recall": 0.7111111111111111,
+            "f1-score": 0.6794055201698513,
+            "support": 225.0
+          },
+          "neutral": {
+            "precision": 0.3125,
+            "recall": 0.4166666666666667,
+            "f1-score": 0.35714285714285715,
+            "support": 132.0
+          },
+          "positive": {
+            "precision": 0.9209621993127147,
+            "recall": 0.8284389489953632,
+            "f1-score": 0.8722538649308381,
+            "support": 647.0
+          },
+          "accuracy": 0.74800796812749,
+          "macro avg": {
+            "precision": 0.6279562344592517,
+            "recall": 0.6520722422577137,
+            "f1-score": 0.6362674140811823,
+            "support": 1004.0
+          },
+          "weighted avg": {
+            "precision": 0.7803326756672914,
+            "recall": 0.74800796812749,
+            "f1-score": 0.7613121013857829,
+            "support": 1004.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Logistic Regression",
+      "parameter": "C",
+      "value": 10.0,
+      "dev": {
+        "accuracy": 0.7749003984063745,
+        "macro_f1": 0.6410164494000652,
+        "confusion_matrix": [
+          [
+            165,
+            33,
+            27
+          ],
+          [
+            50,
+            42,
+            40
+          ],
+          [
+            29,
+            47,
+            571
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.6762295081967213,
+            "recall": 0.7333333333333333,
+            "f1-score": 0.7036247334754797,
+            "support": 225.0
+          },
+          "neutral": {
+            "precision": 0.3442622950819672,
+            "recall": 0.3181818181818182,
+            "f1-score": 0.33070866141732286,
+            "support": 132.0
+          },
+          "positive": {
+            "precision": 0.8949843260188087,
+            "recall": 0.8825347758887172,
+            "f1-score": 0.888715953307393,
+            "support": 647.0
+          },
+          "accuracy": 0.7749003984063745,
+          "macro avg": {
+            "precision": 0.6384920430991657,
+            "recall": 0.6446833091346229,
+            "f1-score": 0.6410164494000652,
+            "support": 1004.0
+          },
+          "weighted avg": {
+            "precision": 0.7735549016227602,
+            "recall": 0.7749003984063745,
+            "f1-score": 0.7738728387738573,
+            "support": 1004.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Naive Bayes",
+      "parameter": "alpha",
+      "value": 0.1,
+      "dev": {
+        "accuracy": 0.7729083665338645,
+        "macro_f1": 0.527674620495292,
+        "confusion_matrix": [
+          [
+            155,
+            5,
+            65
+          ],
+          [
+            56,
+            2,
+            74
+          ],
+          [
+            24,
+            4,
+            619
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.6595744680851063,
+            "recall": 0.6888888888888889,
+            "f1-score": 0.6739130434782609,
+            "support": 225.0
+          },
+          "neutral": {
+            "precision": 0.18181818181818182,
+            "recall": 0.015151515151515152,
+            "f1-score": 0.027972027972027972,
+            "support": 132.0
+          },
+          "positive": {
+            "precision": 0.816622691292876,
+            "recall": 0.9567233384853169,
+            "f1-score": 0.8811387900355871,
+            "support": 647.0
+          },
+          "accuracy": 0.7729083665338645,
+          "macro avg": {
+            "precision": 0.5526717803987214,
+            "recall": 0.5535879141752403,
+            "f1-score": 0.527674620495292,
+            "support": 1004.0
+          },
+          "weighted avg": {
+            "precision": 0.6979672675155774,
+            "recall": 0.7729083665338645,
+            "f1-score": 0.7225294219401805,
+            "support": 1004.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Naive Bayes",
+      "parameter": "alpha",
+      "value": 0.5,
+      "dev": {
+        "accuracy": 0.7091633466135459,
+        "macro_f1": 0.42130059257506147,
+        "confusion_matrix": [
+          [
+            68,
+            0,
+            157
+          ],
+          [
+            11,
+            0,
+            121
+          ],
+          [
+            3,
+            0,
+            644
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.8292682926829268,
+            "recall": 0.3022222222222222,
+            "f1-score": 0.44299674267100975,
+            "support": 225.0
+          },
+          "neutral": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 132.0
+          },
+          "positive": {
+            "precision": 0.6984815618221258,
+            "recall": 0.9953632148377125,
+            "f1-score": 0.8209050350541747,
+            "support": 647.0
+          },
+          "accuracy": 0.7091633466135459,
+          "macro avg": {
+            "precision": 0.5092499515016842,
+            "recall": 0.4325284790199782,
+            "f1-score": 0.42130059257506147,
+            "support": 1004.0
+          },
+          "weighted avg": {
+            "precision": 0.6359590999527629,
+            "recall": 0.7091633466135459,
+            "f1-score": 0.6282866780687532,
+            "support": 1004.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Naive Bayes",
+      "parameter": "alpha",
+      "value": 1.0,
+      "dev": {
+        "accuracy": 0.6683266932270916,
+        "macro_f1": 0.3292726527265273,
+        "confusion_matrix": [
+          [
+            24,
+            0,
+            201
+          ],
+          [
+            1,
+            0,
+            131
+          ],
+          [
+            0,
+            0,
+            647
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.96,
+            "recall": 0.10666666666666667,
+            "f1-score": 0.192,
+            "support": 225.0
+          },
+          "neutral": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 132.0
+          },
+          "positive": {
+            "precision": 0.6608784473953013,
+            "recall": 1.0,
+            "f1-score": 0.7958179581795818,
+            "support": 647.0
+          },
+          "accuracy": 0.6683266932270916,
+          "macro avg": {
+            "precision": 0.5402928157984338,
+            "recall": 0.3688888888888889,
+            "f1-score": 0.3292726527265273,
+            "support": 1004.0
+          },
+          "weighted avg": {
+            "precision": 0.6410242584310358,
+            "recall": 0.6683266932270916,
+            "f1-score": 0.5558707359981967,
+            "support": 1004.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Linear SVM",
+      "parameter": "C",
+      "value": 0.1,
+      "dev": {
+        "accuracy": 0.7709163346613546,
+        "macro_f1": 0.6105587486212963,
+        "confusion_matrix": [
+          [
+            165,
+            24,
+            36
+          ],
+          [
+            57,
+            28,
+            47
+          ],
+          [
+            34,
+            32,
+            581
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.64453125,
+            "recall": 0.7333333333333333,
+            "f1-score": 0.6860706860706861,
+            "support": 225.0
+          },
+          "neutral": {
+            "precision": 0.3333333333333333,
+            "recall": 0.21212121212121213,
+            "f1-score": 0.25925925925925924,
+            "support": 132.0
+          },
+          "positive": {
+            "precision": 0.875,
+            "recall": 0.8979907264296755,
+            "f1-score": 0.8863463005339436,
+            "support": 647.0
+          },
+          "accuracy": 0.7709163346613546,
+          "macro avg": {
+            "precision": 0.6176215277777778,
+            "recall": 0.6144817572947403,
+            "f1-score": 0.6105587486212963,
+            "support": 1004.0
+          },
+          "weighted avg": {
+            "precision": 0.7521359873007968,
+            "recall": 0.7709163346613546,
+            "f1-score": 0.7590181105912231,
+            "support": 1004.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Linear SVM",
+      "parameter": "C",
+      "value": 1.0,
+      "dev": {
+        "accuracy": 0.7808764940239044,
+        "macro_f1": 0.6217399692740917,
+        "confusion_matrix": [
+          [
+            166,
+            27,
+            32
+          ],
+          [
+            59,
+            30,
+            43
+          ],
+          [
+            27,
+            32,
+            588
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.6587301587301587,
+            "recall": 0.7377777777777778,
+            "f1-score": 0.6960167714884696,
+            "support": 225.0
+          },
+          "neutral": {
+            "precision": 0.33707865168539325,
+            "recall": 0.22727272727272727,
+            "f1-score": 0.27149321266968324,
+            "support": 132.0
+          },
+          "positive": {
+            "precision": 0.8868778280542986,
+            "recall": 0.9088098918083463,
+            "f1-score": 0.8977099236641222,
+            "support": 647.0
+          },
+          "accuracy": 0.7808764940239044,
+          "macro avg": {
+            "precision": 0.6275622128232835,
+            "recall": 0.6246201322862838,
+            "f1-score": 0.6217399692740917,
+            "support": 1004.0
+          },
+          "weighted avg": {
+            "precision": 0.7634647634341523,
+            "recall": 0.7808764940239044,
+            "f1-score": 0.7701784843306682,
+            "support": 1004.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Linear SVM",
+      "parameter": "C",
+      "value": 10.0,
+      "dev": {
+        "accuracy": 0.7808764940239044,
+        "macro_f1": 0.611997404882143,
+        "confusion_matrix": [
+          [
+            161,
+            27,
+            37
+          ],
+          [
+            55,
+            26,
+            51
+          ],
+          [
+            22,
+            28,
+            597
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.6764705882352942,
+            "recall": 0.7155555555555555,
+            "f1-score": 0.6954643628509719,
+            "support": 225.0
+          },
+          "neutral": {
+            "precision": 0.32098765432098764,
+            "recall": 0.19696969696969696,
+            "f1-score": 0.24413145539906103,
+            "support": 132.0
+          },
+          "positive": {
+            "precision": 0.8715328467153285,
+            "recall": 0.9227202472952086,
+            "f1-score": 0.8963963963963963,
+            "support": 647.0
+          },
+          "accuracy": 0.7808764940239044,
+          "macro avg": {
+            "precision": 0.6229970297572035,
+            "recall": 0.6117484999401537,
+            "f1-score": 0.611997404882143,
+            "support": 1004.0
+          },
+          "weighted avg": {
+            "precision": 0.7554362595100887,
+            "recall": 0.7808764940239044,
+            "f1-score": 0.7656108587874634,
+            "support": 1004.0
+          }
+        }
+      }
+    }
+  ],
+  "selected_model": "Logistic Regression",
+  "selected_parameter": "C",
+  "selected_value": 0.1,
+  "dev": {
+    "accuracy": 0.7350597609561753,
+    "macro_f1": 0.6421706893683296,
+    "confusion_matrix": [
+      [
+        164,
+        46,
+        15
+      ],
+      [
+        48,
+        66,
+        18
+      ],
+      [
+        44,
+        95,
+        508
+      ]
+    ],
+    "label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "report": {
+      "negative": {
+        "precision": 0.640625,
+        "recall": 0.7288888888888889,
+        "f1-score": 0.681912681912682,
+        "support": 225.0
+      },
+      "neutral": {
+        "precision": 0.3188405797101449,
+        "recall": 0.5,
+        "f1-score": 0.3893805309734513,
+        "support": 132.0
+      },
+      "positive": {
+        "precision": 0.9390018484288355,
+        "recall": 0.7851622874806801,
+        "f1-score": 0.8552188552188552,
+        "support": 647.0
+      },
+      "accuracy": 0.7350597609561753,
+      "macro avg": {
+        "precision": 0.6328224760463268,
+        "recall": 0.6713503921231897,
+        "f1-score": 0.6421706893683296,
+        "support": 1004.0
+      },
+      "weighted avg": {
+        "precision": 0.7905993799354538,
+        "recall": 0.7350597609561753,
+        "f1-score": 0.7551346442683747,
+        "support": 1004.0
+      }
+    }
+  },
+  "test": {
+    "accuracy": 0.7408506429277942,
+    "macro_f1": 0.6454101401965168,
+    "confusion_matrix": [
+      [
+        350,
+        101,
+        45
+      ],
+      [
+        81,
+        124,
+        56
+      ],
+      [
+        72,
+        169,
+        1024
+      ]
+    ],
+    "label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "report": {
+      "negative": {
+        "precision": 0.6958250497017893,
+        "recall": 0.7056451612903226,
+        "f1-score": 0.7007007007007007,
+        "support": 496.0
+      },
+      "neutral": {
+        "precision": 0.3147208121827411,
+        "recall": 0.47509578544061304,
+        "f1-score": 0.3786259541984733,
+        "support": 261.0
+      },
+      "positive": {
+        "precision": 0.9102222222222223,
+        "recall": 0.8094861660079051,
+        "f1-score": 0.8569037656903765,
+        "support": 1265.0
+      },
+      "accuracy": 0.7408506429277942,
+      "macro avg": {
+        "precision": 0.6402560280355842,
+        "recall": 0.6634090375796136,
+        "f1-score": 0.6454101401965168,
+        "support": 2022.0
+      },
+      "weighted avg": {
+        "precision": 0.7807628426028161,
+        "recall": 0.7408506429277942,
+        "f1-score": 0.75685073451616,
+        "support": 2022.0
+      }
+    }
+  }
+}

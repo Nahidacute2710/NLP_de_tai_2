@@ -1,0 +1,13 @@
+{
+  "benchmark": "http_api_response_time",
+  "dataset": "UIT-ViSD4SA Test",
+  "samples": 50,
+  "seed": 42,
+  "request_mode": "sequential",
+  "mean_latency_seconds": 0.09533034494146704,
+  "median_latency_seconds": 0.09051014599390328,
+  "p95_latency_seconds": 0.12471193759702144,
+  "min_latency_seconds": 0.07642520894296467,
+  "max_latency_seconds": 0.22757029091008008,
+  "throughput_requests_per_second": 10.48983931206796
+}

@@ -1,0 +1,268 @@
+{
+  "benchmark": "end_to_end_inference",
+  "dataset": "UIT-ViSD4SA Test",
+  "samples": 50,
+  "seed": 42,
+  "device": "cpu",
+  "hardware": "macOS-26.3.1-arm64-arm-64bit",
+  "torch_version": "2.14.1",
+  "model_loading_seconds": 8.951572624966502,
+  "mean_latency_seconds": 0.0958933132700622,
+  "median_latency_seconds": 0.09095656254794449,
+  "p95_latency_seconds": 0.12370760409394277,
+  "min_latency_seconds": 0.07820724998600781,
+  "max_latency_seconds": 0.19590529217384756,
+  "throughput_reviews_per_second": 10.428255796978483,
+  "individual_results": [
+    {
+      "review_length_chars": 116,
+      "latency_seconds": 0.09106741612777114,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 193,
+      "latency_seconds": 0.08840670809149742,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 95,
+      "latency_seconds": 0.0913610418792814,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 262,
+      "latency_seconds": 0.11750250007025898,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 111,
+      "latency_seconds": 0.08132887491956353,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 97,
+      "latency_seconds": 0.09084570896811783,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 166,
+      "latency_seconds": 0.09590108296833932,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 80,
+      "latency_seconds": 0.09719087486155331,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 200,
+      "latency_seconds": 0.09400758310221136,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 154,
+      "latency_seconds": 0.0872430419549346,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 464,
+      "latency_seconds": 0.19590529217384756,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 126,
+      "latency_seconds": 0.10501529183238745,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 247,
+      "latency_seconds": 0.08220549998804927,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 192,
+      "latency_seconds": 0.07886012503877282,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 92,
+      "latency_seconds": 0.09964616689831018,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 165,
+      "latency_seconds": 0.09319012495689094,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 113,
+      "latency_seconds": 0.10189866600558162,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 177,
+      "latency_seconds": 0.08833833294920623,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 300,
+      "latency_seconds": 0.08188954112119973,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 260,
+      "latency_seconds": 0.07931241695769131,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 136,
+      "latency_seconds": 0.08864229102618992,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 98,
+      "latency_seconds": 0.09591237502172589,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 242,
+      "latency_seconds": 0.08641924988478422,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 239,
+      "latency_seconds": 0.0822322079911828,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 175,
+      "latency_seconds": 0.07820724998600781,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 81,
+      "latency_seconds": 0.09729083301499486,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 121,
+      "latency_seconds": 0.08696662494912744,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 91,
+      "latency_seconds": 0.0850609999615699,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 293,
+      "latency_seconds": 0.10029283305630088,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 105,
+      "latency_seconds": 0.13157262513414025,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 119,
+      "latency_seconds": 0.092761707957834,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 229,
+      "latency_seconds": 0.08339033392257988,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 133,
+      "latency_seconds": 0.1004966669715941,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 177,
+      "latency_seconds": 0.08491058391518891,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 180,
+      "latency_seconds": 0.09042970882728696,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 81,
+      "latency_seconds": 0.1048272498883307,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 311,
+      "latency_seconds": 0.10897658299654722,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 100,
+      "latency_seconds": 0.08584879105910659,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 231,
+      "latency_seconds": 0.08187275007367134,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 94,
+      "latency_seconds": 0.08786462503485382,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 444,
+      "latency_seconds": 0.12714504217728972,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 124,
+      "latency_seconds": 0.1195062908809632,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 121,
+      "latency_seconds": 0.09494662494398654,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 109,
+      "latency_seconds": 0.08972783293575048,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 80,
+      "latency_seconds": 0.1053207500372082,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 120,
+      "latency_seconds": 0.10254404181614518,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 87,
+      "latency_seconds": 0.08950924989767373,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 145,
+      "latency_seconds": 0.08796000014990568,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 127,
+      "latency_seconds": 0.09644704102538526,
+      "truncated": false
+    },
+    {
+      "review_length_chars": 187,
+      "latency_seconds": 0.08646620810031891,
+      "truncated": false
+    }
+  ]
+}

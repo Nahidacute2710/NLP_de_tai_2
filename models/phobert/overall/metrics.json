@@ -1,0 +1,65 @@
+{
+  "dev": {
+    "eval_loss": 0.4795028567314148,
+    "eval_accuracy": 0.8027888446215139,
+    "eval_macro_f1": 0.6759374984306422,
+    "eval_runtime": 1.8802,
+    "eval_samples_per_second": 533.981,
+    "eval_steps_per_second": 67.014,
+    "epoch": 3.9954699886749716
+  },
+  "test": {
+    "test_loss": 0.5335397124290466,
+    "test_accuracy": 0.7932739861523245,
+    "test_macro_f1": 0.6569389079619072,
+    "test_runtime": 3.6612,
+    "test_samples_per_second": 552.277,
+    "test_steps_per_second": 69.103,
+    "epoch": 3.9954699886749716
+  },
+  "seconds_train": 345.19399404525757,
+  "label_provenance": {
+    "source": "UIT-ViSFD",
+    "method": "rating_derived",
+    "mapping": {
+      "1-2": "negative",
+      "3": "neutral",
+      "4-5": "positive"
+    }
+  },
+  "config": {
+    "task": "overall",
+    "overall_source": "visfd",
+    "model": "vinai/phobert-base-v2",
+    "data": "data/overall_visfd",
+    "processed": "data/processed",
+    "vncorenlp": "/content/drive/MyDrive/ABSA_PhoBERT/vncorenlp",
+    "stars_csv": null,
+    "text_col": "comment",
+    "star_col": "n_star",
+    "label_strategy": "rating_then_majority",
+    "output": "/content/absa_project/outputs/phobert_visfd",
+    "max_length": 256,
+    "batch_size": 8,
+    "grad_accum": 2,
+    "epochs": 4,
+    "lr": 2e-05,
+    "seed": 42,
+    "fp16": true,
+    "allow_overlap": false
+  },
+  "overlap_audit": {
+    "sizes": {
+      "train": 7057,
+      "dev": 1004,
+      "test": 2022
+    },
+    "within_split_duplicate_counts": {
+      "train": 0,
+      "dev": 0,
+      "test": 0
+    },
+    "cross_split_duplicate_text_count": 0,
+    "cross_split_examples": []
+  }
+}

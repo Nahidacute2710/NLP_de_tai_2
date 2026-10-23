@@ -1,0 +1,33 @@
+{
+  "dataset": "external_tiki",
+  "label_source": "rating_derived_weak_labels",
+  "selection": "stratified_sample",
+  "seed": 42,
+  "requested_samples": 100,
+  "successful_samples": 100,
+  "failed_samples": 0,
+  "accuracy": 0.69,
+  "macro_f1": 0.6373737373737374,
+  "label_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "confusion_matrix": [
+    [
+      21,
+      5,
+      4
+    ],
+    [
+      14,
+      9,
+      7
+    ],
+    [
+      1,
+      0,
+      39
+    ]
+  ]
+}

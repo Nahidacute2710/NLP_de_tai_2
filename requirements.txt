@@ -1,0 +1,22 @@
+# Core ML
+torch>=2.2
+transformers>=4.44,<5
+accelerate>=0.34
+scikit-learn>=1.4
+numpy>=1.24
+pandas>=2.0
+joblib>=1.3
+
+# Vietnamese word segmentation
+pyjnius>=1.7.0,<1.8.0
+py-vncorenlp==0.1.4
+
+# Evaluation
+seqeval>=1.2.2
+
+# FastAPI backend
+fastapi>=0.110
+uvicorn>=0.29
+
+# Testing
+pytest>=8

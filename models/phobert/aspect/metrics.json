@@ -1,0 +1,59 @@
+{
+  "dev": {
+    "eval_loss": 2.770327568054199,
+    "eval_token_accuracy": 0.7038792633758308,
+    "eval_token_macro_f1": 0.22132071309329862,
+    "eval_runtime": 5.9142,
+    "eval_samples_per_second": 175.34,
+    "eval_steps_per_second": 10.99,
+    "epoch": 4.0
+  },
+  "test": {
+    "test_loss": 2.696686029434204,
+    "test_token_accuracy": 0.7108680702496826,
+    "test_token_macro_f1": 0.2237983556578706,
+    "test_runtime": 11.978,
+    "test_samples_per_second": 173.317,
+    "test_steps_per_second": 10.853,
+    "epoch": 4.0
+  },
+  "seconds_train": 492.95596146583557,
+  "label_provenance": {
+    "note": "Aspect gold only; exact-span and pair F1 use src.evaluate_model after training"
+  },
+  "config": {
+    "task": "aspect",
+    "overall_source": "majority",
+    "model": "vinai/phobert-base-v2",
+    "data": "data/visd4sa",
+    "processed": "data/processed_v2",
+    "vncorenlp": "models/vncorenlp",
+    "stars_csv": null,
+    "text_col": "comment",
+    "star_col": "n_star",
+    "label_strategy": "rating_then_majority",
+    "output": "/kaggle/working/absa_project/outputs/phobert_aspect",
+    "max_length": 256,
+    "batch_size": 8,
+    "grad_accum": 2,
+    "epochs": 4,
+    "lr": 2e-05,
+    "seed": 42,
+    "fp16": true,
+    "allow_overlap": false
+  },
+  "overlap_audit": {
+    "sizes": {
+      "train": 7360,
+      "dev": 1037,
+      "test": 2076
+    },
+    "within_split_duplicate_counts": {
+      "train": 0,
+      "dev": 0,
+      "test": 0
+    },
+    "cross_split_duplicate_text_count": 0,
+    "cross_split_examples": []
+  }
+}

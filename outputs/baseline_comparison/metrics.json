@@ -1,0 +1,741 @@
+{
+  "label_provenance": {
+    "train": {
+      "majority_aspects": 6652,
+      "label_positive": 3893,
+      "label_negative": 2629,
+      "excluded_unlabeled_or_tied": 1042,
+      "label_neutral": 130,
+      "raw": 7694
+    },
+    "dev": {
+      "majority_aspects": 946,
+      "label_negative": 353,
+      "excluded_unlabeled_or_tied": 152,
+      "label_positive": 580,
+      "label_neutral": 13,
+      "raw": 1098
+    },
+    "test": {
+      "majority_aspects": 1919,
+      "label_positive": 1153,
+      "label_negative": 746,
+      "excluded_unlabeled_or_tied": 279,
+      "label_neutral": 20,
+      "raw": 2198
+    }
+  },
+  "overlap_audit": {
+    "sizes": {
+      "train": 7694,
+      "dev": 1098,
+      "test": 2198
+    },
+    "within_split_duplicate_counts": {
+      "train": 0,
+      "dev": 0,
+      "test": 0
+    },
+    "cross_split_duplicate_text_count": 0,
+    "cross_split_examples": []
+  },
+  "selection": [
+    {
+      "model": "Logistic Regression",
+      "parameter": "C",
+      "value": 0.1,
+      "dev": {
+        "accuracy": 0.8900634249471459,
+        "macro_f1": 0.7156164045265916,
+        "confusion_matrix": [
+          [
+            329,
+            2,
+            22
+          ],
+          [
+            4,
+            6,
+            3
+          ],
+          [
+            60,
+            13,
+            507
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.8371501272264631,
+            "recall": 0.9320113314447592,
+            "f1-score": 0.8820375335120644,
+            "support": 353.0
+          },
+          "neutral": {
+            "precision": 0.2857142857142857,
+            "recall": 0.46153846153846156,
+            "f1-score": 0.35294117647058826,
+            "support": 13.0
+          },
+          "positive": {
+            "precision": 0.9530075187969925,
+            "recall": 0.8741379310344828,
+            "f1-score": 0.9118705035971223,
+            "support": 580.0
+          },
+          "accuracy": 0.8900634249471459,
+          "macro avg": {
+            "precision": 0.6919573105792471,
+            "recall": 0.7558959080059012,
+            "f1-score": 0.7156164045265916,
+            "support": 946.0
+          },
+          "weighted avg": {
+            "precision": 0.9006053293102356,
+            "recall": 0.8900634249471459,
+            "f1-score": 0.8930574806661811,
+            "support": 946.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Logistic Regression",
+      "parameter": "C",
+      "value": 1.0,
+      "dev": {
+        "accuracy": 0.919661733615222,
+        "macro_f1": 0.6936138826694452,
+        "confusion_matrix": [
+          [
+            333,
+            0,
+            20
+          ],
+          [
+            4,
+            2,
+            7
+          ],
+          [
+            43,
+            2,
+            535
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.8763157894736842,
+            "recall": 0.943342776203966,
+            "f1-score": 0.9085948158253752,
+            "support": 353.0
+          },
+          "neutral": {
+            "precision": 0.5,
+            "recall": 0.15384615384615385,
+            "f1-score": 0.23529411764705882,
+            "support": 13.0
+          },
+          "positive": {
+            "precision": 0.9519572953736655,
+            "recall": 0.9224137931034483,
+            "f1-score": 0.9369527145359019,
+            "support": 580.0
+          },
+          "accuracy": 0.919661733615222,
+          "macro avg": {
+            "precision": 0.7760910282824499,
+            "recall": 0.673200907717856,
+            "f1-score": 0.6936138826694452,
+            "support": 946.0
+          },
+          "weighted avg": {
+            "precision": 0.917520829810715,
+            "recall": 0.919661733615222,
+            "f1-score": 0.9167287187596114,
+            "support": 946.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Logistic Regression",
+      "parameter": "C",
+      "value": 10.0,
+      "dev": {
+        "accuracy": 0.9323467230443975,
+        "macro_f1": 0.7068148685130686,
+        "confusion_matrix": [
+          [
+            333,
+            0,
+            20
+          ],
+          [
+            4,
+            2,
+            7
+          ],
+          [
+            32,
+            1,
+            547
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.9024390243902439,
+            "recall": 0.943342776203966,
+            "f1-score": 0.9224376731301939,
+            "support": 353.0
+          },
+          "neutral": {
+            "precision": 0.6666666666666666,
+            "recall": 0.15384615384615385,
+            "f1-score": 0.25,
+            "support": 13.0
+          },
+          "positive": {
+            "precision": 0.9529616724738676,
+            "recall": 0.9431034482758621,
+            "f1-score": 0.9480069324090121,
+            "support": 580.0
+          },
+          "accuracy": 0.9323467230443975,
+          "macro avg": {
+            "precision": 0.8406891211769261,
+            "recall": 0.6800974594419941,
+            "f1-score": 0.7068148685130686,
+            "support": 946.0
+          },
+          "weighted avg": {
+            "precision": 0.9301748544516555,
+            "recall": 0.9323467230443975,
+            "f1-score": 0.928873699167215,
+            "support": 946.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Naive Bayes",
+      "parameter": "alpha",
+      "value": 0.1,
+      "dev": {
+        "accuracy": 0.9143763213530656,
+        "macro_f1": 0.6104686286706265,
+        "confusion_matrix": [
+          [
+            309,
+            0,
+            44
+          ],
+          [
+            3,
+            0,
+            10
+          ],
+          [
+            24,
+            0,
+            556
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.9196428571428571,
+            "recall": 0.8753541076487252,
+            "f1-score": 0.8969521044992743,
+            "support": 353.0
+          },
+          "neutral": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 13.0
+          },
+          "positive": {
+            "precision": 0.9114754098360656,
+            "recall": 0.9586206896551724,
+            "f1-score": 0.934453781512605,
+            "support": 580.0
+          },
+          "accuracy": 0.9143763213530656,
+          "macro avg": {
+            "precision": 0.6103727556596409,
+            "recall": 0.6113249324346325,
+            "f1-score": 0.6104686286706265,
+            "support": 946.0
+          },
+          "weighted avg": {
+            "precision": 0.9019975330616772,
+            "recall": 0.9143763213530656,
+            "f1-score": 0.9076186957352587,
+            "support": 946.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Naive Bayes",
+      "parameter": "alpha",
+      "value": 0.5,
+      "dev": {
+        "accuracy": 0.8964059196617337,
+        "macro_f1": 0.5961620750636004,
+        "confusion_matrix": [
+          [
+            281,
+            0,
+            72
+          ],
+          [
+            1,
+            0,
+            12
+          ],
+          [
+            13,
+            0,
+            567
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.9525423728813559,
+            "recall": 0.7960339943342776,
+            "f1-score": 0.8672839506172839,
+            "support": 353.0
+          },
+          "neutral": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 13.0
+          },
+          "positive": {
+            "precision": 0.8709677419354839,
+            "recall": 0.9775862068965517,
+            "f1-score": 0.9212022745735174,
+            "support": 580.0
+          },
+          "accuracy": 0.8964059196617337,
+          "macro avg": {
+            "precision": 0.6078367049389466,
+            "recall": 0.5912067337436098,
+            "f1-score": 0.5961620750636004,
+            "support": 946.0
+          },
+          "weighted avg": {
+            "precision": 0.889438422779809,
+            "recall": 0.8964059196617337,
+            "f1-score": 0.8884234184149485,
+            "support": 946.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Naive Bayes",
+      "parameter": "alpha",
+      "value": 1.0,
+      "dev": {
+        "accuracy": 0.8731501057082452,
+        "macro_f1": 0.5765355866103348,
+        "confusion_matrix": [
+          [
+            252,
+            0,
+            101
+          ],
+          [
+            1,
+            0,
+            12
+          ],
+          [
+            6,
+            0,
+            574
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.972972972972973,
+            "recall": 0.7138810198300283,
+            "f1-score": 0.8235294117647058,
+            "support": 353.0
+          },
+          "neutral": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 13.0
+          },
+          "positive": {
+            "precision": 0.8355167394468704,
+            "recall": 0.9896551724137931,
+            "f1-score": 0.9060773480662984,
+            "support": 580.0
+          },
+          "accuracy": 0.8731501057082452,
+          "macro avg": {
+            "precision": 0.6028299041399477,
+            "recall": 0.5678453974146072,
+            "f1-score": 0.5765355866103348,
+            "support": 946.0
+          },
+          "weighted avg": {
+            "precision": 0.8753268164256283,
+            "recall": 0.8731501057082452,
+            "f1-score": 0.862823196861939,
+            "support": 946.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Linear SVM",
+      "parameter": "C",
+      "value": 0.1,
+      "dev": {
+        "accuracy": 0.9164904862579282,
+        "macro_f1": 0.6956360785723558,
+        "confusion_matrix": [
+          [
+            327,
+            0,
+            26
+          ],
+          [
+            4,
+            2,
+            7
+          ],
+          [
+            41,
+            1,
+            538
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.8790322580645161,
+            "recall": 0.9263456090651558,
+            "f1-score": 0.9020689655172414,
+            "support": 353.0
+          },
+          "neutral": {
+            "precision": 0.6666666666666666,
+            "recall": 0.15384615384615385,
+            "f1-score": 0.25,
+            "support": 13.0
+          },
+          "positive": {
+            "precision": 0.9422066549912435,
+            "recall": 0.9275862068965517,
+            "f1-score": 0.9348392701998263,
+            "support": 580.0
+          },
+          "accuracy": 0.9164904862579282,
+          "macro avg": {
+            "precision": 0.8293018599074754,
+            "recall": 0.6692593232692872,
+            "f1-score": 0.6956360785723558,
+            "support": 946.0
+          },
+          "weighted avg": {
+            "precision": 0.9148466317741671,
+            "recall": 0.9164904862579282,
+            "f1-score": 0.9131999170649951,
+            "support": 946.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Linear SVM",
+      "parameter": "C",
+      "value": 1.0,
+      "dev": {
+        "accuracy": 0.9334038054968288,
+        "macro_f1": 0.6717072685355713,
+        "confusion_matrix": [
+          [
+            333,
+            0,
+            20
+          ],
+          [
+            5,
+            1,
+            7
+          ],
+          [
+            31,
+            0,
+            549
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.9024390243902439,
+            "recall": 0.943342776203966,
+            "f1-score": 0.9224376731301939,
+            "support": 353.0
+          },
+          "neutral": {
+            "precision": 1.0,
+            "recall": 0.07692307692307693,
+            "f1-score": 0.14285714285714285,
+            "support": 13.0
+          },
+          "positive": {
+            "precision": 0.953125,
+            "recall": 0.946551724137931,
+            "f1-score": 0.9498269896193772,
+            "support": 580.0
+          },
+          "accuracy": 0.9334038054968288,
+          "macro avg": {
+            "precision": 0.9518546747967479,
+            "recall": 0.6556058590883246,
+            "f1-score": 0.6717072685355713,
+            "support": 946.0
+          },
+          "weighted avg": {
+            "precision": 0.9348556824627442,
+            "recall": 0.9334038054968288,
+            "f1-score": 0.928517225635666,
+            "support": 946.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Linear SVM",
+      "parameter": "C",
+      "value": 10.0,
+      "dev": {
+        "accuracy": 0.9260042283298098,
+        "macro_f1": 0.6662335170107191,
+        "confusion_matrix": [
+          [
+            328,
+            0,
+            25
+          ],
+          [
+            6,
+            1,
+            6
+          ],
+          [
+            33,
+            0,
+            547
+          ]
+        ],
+        "label_order": [
+          "negative",
+          "neutral",
+          "positive"
+        ],
+        "report": {
+          "negative": {
+            "precision": 0.8937329700272479,
+            "recall": 0.9291784702549575,
+            "f1-score": 0.9111111111111111,
+            "support": 353.0
+          },
+          "neutral": {
+            "precision": 1.0,
+            "recall": 0.07692307692307693,
+            "f1-score": 0.14285714285714285,
+            "support": 13.0
+          },
+          "positive": {
+            "precision": 0.9463667820069204,
+            "recall": 0.9431034482758621,
+            "f1-score": 0.9447322970639033,
+            "support": 580.0
+          },
+          "accuracy": 0.9260042283298098,
+          "macro avg": {
+            "precision": 0.9466999173447227,
+            "recall": 0.6497349984846322,
+            "f1-score": 0.6662335170107191,
+            "support": 946.0
+          },
+          "weighted avg": {
+            "precision": 0.9274635010397805,
+            "recall": 0.9260042283298098,
+            "f1-score": 0.9211671219623985,
+            "support": 946.0
+          }
+        }
+      }
+    }
+  ],
+  "selected_model": "Logistic Regression",
+  "selected_parameter": "C",
+  "selected_value": 0.1,
+  "dev": {
+    "accuracy": 0.8900634249471459,
+    "macro_f1": 0.7156164045265916,
+    "confusion_matrix": [
+      [
+        329,
+        2,
+        22
+      ],
+      [
+        4,
+        6,
+        3
+      ],
+      [
+        60,
+        13,
+        507
+      ]
+    ],
+    "label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "report": {
+      "negative": {
+        "precision": 0.8371501272264631,
+        "recall": 0.9320113314447592,
+        "f1-score": 0.8820375335120644,
+        "support": 353.0
+      },
+      "neutral": {
+        "precision": 0.2857142857142857,
+        "recall": 0.46153846153846156,
+        "f1-score": 0.35294117647058826,
+        "support": 13.0
+      },
+      "positive": {
+        "precision": 0.9530075187969925,
+        "recall": 0.8741379310344828,
+        "f1-score": 0.9118705035971223,
+        "support": 580.0
+      },
+      "accuracy": 0.8900634249471459,
+      "macro avg": {
+        "precision": 0.6919573105792471,
+        "recall": 0.7558959080059012,
+        "f1-score": 0.7156164045265916,
+        "support": 946.0
+      },
+      "weighted avg": {
+        "precision": 0.9006053293102356,
+        "recall": 0.8900634249471459,
+        "f1-score": 0.8930574806661811,
+        "support": 946.0
+      }
+    }
+  },
+  "test": {
+    "accuracy": 0.8832725377800938,
+    "macro_f1": 0.6173906026458548,
+    "confusion_matrix": [
+      [
+        688,
+        23,
+        35
+      ],
+      [
+        8,
+        2,
+        10
+      ],
+      [
+        132,
+        16,
+        1005
+      ]
+    ],
+    "label_order": [
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "report": {
+      "negative": {
+        "precision": 0.8309178743961353,
+        "recall": 0.9222520107238605,
+        "f1-score": 0.8742058449809402,
+        "support": 746.0
+      },
+      "neutral": {
+        "precision": 0.04878048780487805,
+        "recall": 0.1,
+        "f1-score": 0.06557377049180328,
+        "support": 20.0
+      },
+      "positive": {
+        "precision": 0.9571428571428572,
+        "recall": 0.8716392020815265,
+        "f1-score": 0.9123921924648207,
+        "support": 1153.0
+      },
+      "accuracy": 0.8832725377800938,
+      "macro avg": {
+        "precision": 0.6122804064479569,
+        "recall": 0.631297070935129,
+        "f1-score": 0.6173906026458548,
+        "support": 1919.0
+      },
+      "weighted avg": {
+        "precision": 0.8986065963216929,
+        "recall": 0.8832725377800938,
+        "f1-score": 0.8887218518382258,
+        "support": 1919.0
+      }
+    }
+  }
+}
